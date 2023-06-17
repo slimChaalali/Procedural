@@ -1,4 +1,4 @@
-FUNCTION dot_product(v1,v2: ARRAY_OF INTEGER[100]): INTEGER
+FUNCTION dot_product(v1,v2: ARRAY_OF INTEGER[100])
 VAR
     ps: INTEGER := 0;
     j: INTEGER := 0;
