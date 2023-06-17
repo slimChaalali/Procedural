@@ -1,0 +1,21 @@
+FUNCTION dot_product(v1,v2: ARRAY_OF INTEGER[100]): INTEGER
+VAR
+    ps: INTEGER := 0;
+    j: INTEGER := 0;
+BEGIN
+
+    IF(v1.length = v2.length) THEN
+        FOR j FROM 0 TO v1.length DO
+            ps := ps + v1[j] * v2[j];
+        END_FOR
+          IF (ps = 0) THEN
+               Write("V1 and V2 are orthogonal");
+          ELSE
+             Write("V1 and V2 are not orthogonal");
+          END_IF
+        RETURN ps;
+    ELSE
+        Write("Vector length not equale");
+        RETURN null ;
+    END_IF
+END

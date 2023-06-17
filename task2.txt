@@ -1,0 +1,13 @@
+function insertionSort(arr: ARRAY_OF_INTEGER)
+    n := length(arr)
+    for i := 1 to n-1 do
+        num := arr[i]
+        j := i - 1
+        while j >= 0 and arr[j] > num do
+            arr[j+1] := arr[j]
+            j := j - 1
+        end while
+        arr[j+1] := num
+    end for
+    return arr
+end function
